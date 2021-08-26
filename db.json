@@ -1,0 +1,42 @@
+{
+  "api": [
+    {
+      "id": 1,
+      "stock": "omni",
+      "shares": 21,
+      "bought": 2.21,
+      "sold": 2.32,
+      "pattern": "MP",
+      "execution": 8,
+      "description": "A tiny description for this stock and how I traded it."
+    },
+    {
+      "id": 2,
+      "stock": "omni",
+      "shares": 21,
+      "bought": 2.21,
+      "sold": 2.32,
+      "pattern": "MP",
+      "execution": 8,
+      "description": "A tiny description for this stock and how I traded it."
+    },
+    {
+      "shares": "sdfsdf",
+      "sold": "sdf",
+      "pattern": "dfs",
+      "bought": "sdfsdf",
+      "execution": "fds",
+      "stock": "sdf",
+      "id": 5
+    },
+    {
+      "shares": "12",
+      "sold": "1.53",
+      "pattern": "MP",
+      "bought": "1.21",
+      "execution": "8",
+      "stock": "Omni",
+      "id": 6
+    }
+  ]
+}
