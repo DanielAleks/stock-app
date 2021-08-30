@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lFf" class="main-bg-image">
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -24,9 +24,10 @@
         </q-item-label>
 
         <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
+          v-for="to in essentialLinks"
+          :key="to.title"
+          v-bind="to"
+          target="_blank"
         />
       </q-list>
     </q-drawer>
@@ -37,51 +38,59 @@
   </q-layout>
 </template>
 
+<style lang="sass">
+.main-bg-image
+  background-image: url(../assets/stockBg.png)
+@font-face
+  font-family: "Oswald-B"
+  src: url(../assets/fonts/static/Oswald-Bold.ttf)
+@font-face
+  font-family: "Nunito"
+  src: url(../assets/fonts/Nunito-Regular.ttf)
+// h3, p
+
+// p
+//   font-family: Nunito
+//   font-size: 1.2rem
+//   width: 20rem
+//   margin-top: 2rem
+
+h3
+  width: 20rem
+  font-family: oswald-b
+  padding: 0px
+  margin: 0px
+  color: #fff
+  margin-left: 5rem
+</style>
+
 <script lang="ts">
 import EssentialLink from 'components/EssentialLink.vue';
 
 const linksList = [
   {
     title: 'Post',
-    caption: 'quasar.dev',
+    caption: 'post your trades',
     icon: 'school',
-    link: 'http://localhost:8080/#/post',
+    link: '#/post',
   },
   {
     title: 'Home',
-    caption: 'github.com/quasarframework',
+    caption: 'home',
     icon: 'code',
-    link: 'http://localhost:8080/#/',
+    link: '#/',
   },
   {
     title: 'Review',
-    caption: 'chat.quasar.dev',
+    caption: 'review your trades',
     icon: 'chat',
-    link: 'http://localhost:8080/#/review',
+    link: '#/review',
   },
   {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev',
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev',
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev',
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
+    title: 'The App',
+    caption: 'learn why I created this app and how it can help you.',
     icon: 'favorite',
-    link: 'https://awesome.quasar.dev',
+    link: '/',
   },
 ];
 

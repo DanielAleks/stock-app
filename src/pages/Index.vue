@@ -6,12 +6,6 @@
 </template>
 
 <style lang="sass" scoped>
-@font-face
-  font-family: "Oswald-B"
-  src: url(../assets/fonts/static/Oswald-Bold.ttf)
-@font-face
-  font-family: "Nunito"
-  src: url(../assets/fonts/Nunito-Regular.ttf)
 h3, p
   padding: 0px
   margin: 0px

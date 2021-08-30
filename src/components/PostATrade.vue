@@ -72,7 +72,7 @@ export default defineComponent({
       bought: '',
       execution: '',
       stockValue: '',
-      stocks: null,
+      stocks: {},
     };
   },
   methods: {
